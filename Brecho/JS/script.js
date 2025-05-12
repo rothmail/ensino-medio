@@ -1,5 +1,5 @@
-const nome = prompt("Olá, flor do dia! 🌸 Qual seu nome?");
-const saudacao = `<p>Bem-vindo(a) ao Brechó Senac, ${nome}! 💜<br>Venha ver nossas peças incríveis e se apaixonar!!</p>`;
+const nome = prompt("Olá, bom dia! Qual seu nome?");
+const saudacao = `<p>Bem-vindo(a) ao Brechó Senac, ${nome}! <br>Venha ver nossas peças incríveis e se apaixonar!!</p>`;
 document.getElementById("mensagemInicial").innerHTML = saudacao;
 
 const interesse = confirm(

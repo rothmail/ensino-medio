@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Investimentos</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="menu">
+      <a href="#"><i class="fas fa-home"></i><span>Início</span></a>
+      <a href=""><i class="fas fa-dollar-sign"></i><span> Dólar</span></a>
+      <a href="#"><i class="fas fa-calculator"></i><span> Simulador</span></a>
+      <a href="#"><i class="fas fa-envelope"></i><span> Contato</span></a>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="header">
+      <h1>Portal de Investimentos</h1>
+      <p>Controle e Simulação</p>
+    </div>
+
+    <section id="dolar" class="card">
+      <h2>Valor do Dólar Hoje</h2>
+      <p id="valorDolar">Buscando valor atual...</p>
+    </section>
+
+    <section id="simulador" class="card">
+      <h2>Simulador de Investimento</h2>
+      <label for="valor">Valor Inicial:</label>
+      <input type="number" id="valor" placeholder="Ex: 1000">
+
+      <label for="juros">Taxa de Juros Mensal:</label>
+      <input type="number" id="juros" placeholder="Ex: 1">
+
+      <label for="tempo">Tempo:</label>
+      <input type="number" id="tempo" placeholder="Ex: 12">
+
+      <button onclick="simularInvestimento()">Simular</button>
+      <p id="resultado"></p>
+    </section>
+  </main>
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>

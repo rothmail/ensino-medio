@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #1a1a2e;
+    width: 80px;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    color: white;
+}
+
+.sidebar:hover {
+    width: 220px;
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar .menu a {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar .menu a:hover {
+    background-color: #16213e;
+}
+
+.sidebar i {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.sidebar span {
+    margin-left: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.sidebar:hover span {
+    opacity: 1;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1a1a2e;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #0f3460;
+}
+
+input,
+button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #533483;
+}
